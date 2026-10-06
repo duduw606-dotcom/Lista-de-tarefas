@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px;
+  background: #1e1e2e;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  padding: 25px;
+  background: #2a2a3c;
+  color: #fff;
+  border-radius: 16px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.entrada {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #14141f;
+  color: #fff;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #22c55e;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(1.15);
+}
+
+.aviso {
+  min-height: 20px;
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #f87171;
+}
+
+#lista {
+  list-style: none;
+  margin-top: 15px;
+}
+
+#lista li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+  background: #14141f;
+  border-radius: 8px;
+}
+
+#lista li span {
+  flex: 1;
+  word-break: break-word;
+}
+
+#lista li.concluida span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+#lista li button {
+  background: #ef4444;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+#lista li button.btn-editar {
+  background: #3b82f6;
+}
+
+#lista li span[contenteditable="true"] {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
